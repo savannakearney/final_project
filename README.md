@@ -3,14 +3,7 @@
 ## Week 1
 
 
-This week I wrote out all of my basic HTML for my app, including
-*Basic html
-*Head, body and meta tags
-*Linking to my style sheets and JavaScript
-*Putting in a map with markers
-*Creating titles, text and a footnote
-*Linking and attributing images
-*Wrapping everything in divs for future JavaScript functions
+This week I wrote out all of my basic HTML for my app, including basic html, adding head, body and meta tags, linking to my style sheets and JavaScript, putting in a map with markers, creating titles, text and a footnote, linking and attributing images, wrapping everything in divs for future JavaScript functions.
 
 
 This week was challenging because every step took much longer than I originally expected. Although I already knew how to do the leaflet map, basic HTML and more, now I know to better plan for the time the JavaScript and CSS will take.
