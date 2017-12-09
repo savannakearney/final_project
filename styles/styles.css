@@ -1,7 +1,161 @@
+
+/*.site {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header header header"
+  "map map map"
+  "boston boston boston"
+  "boston_food boston_history boston_fun"
+  "louisville louisville louisville"
+  "louisville_food louisville_fun louisville_outdoors"
+  "charleston charleston charleston"
+  "charleston_food charleston_fun charleston_architecture"
+  "savannah savannah savannah"
+  "savannah_food savannah_shopping savannah_history"
+  "footer footer footer"
+}*/
+
+.city, .subphoto {
+  display: grid;
+  cursor: pointer;
+  /*padding-top: 50px;*/
+}
+
+body {
+  margin: auto;
+  background: #FFE6E1;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 3.5em;
+}
+h2 {
+  text-align: center;
+  font-family: 'IM Fell DW Pica', serif;
+}
+
+p, h3 {
+  text-align: center;
+  font-family: 'News Cycle', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mainphoto {
+  margin-top: 20%;
+}
+
+.city {
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.map {
+  grid-area: map;
+}
+
+/*#boston_main_image {
+  grid-area: boston;
+}
+
+#boston_food {
+  grid-area: boston_food;
+}
+
+#boston_history {
+  grid-area: boston_history;
+}
+
+#boston_fun {
+  grid-area: boston_fun;
+}
+
+#louisville_main_image {
+  grid-area: louisville;
+}
+
+#louisville_food {
+  grid-area: louisville_food;
+}
+
+#louisville_outdoors {
+  grid-area: louisville_outdoors;
+}
+
+#louisville_fun {
+  grid-area: louisville_fun;
+}
+
+#charleston_main_image {
+  grid-area: charleston;
+}
+
+#charleston_food {
+  grid-area: charleston_food;
+}
+
+#charleston_fun {
+  grid-area: charleston_fun;
+}
+
+#charleston_architecture {
+  grid-area: charleston_architecture;
+}
+
+#savannah_main_image {
+  grid-area: savannah;
+}
+
+#savannah_food {
+  grid-area: savannah_food;
+}
+
+#savannah_shopping {
+  grid-area: savannah_shopping;
+}
+
+#savannah_history {
+  grid-area: savannah_history;
+}*/
+
+.subphoto {
+  margin: auto;
+  border-radius: 15px;
+  /*float: left;*/
+}
+.sub {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+footer {
+  text-align: center;
+  font-family: 'News Cycle', sans-serif;
+  grid-area: footer;
+  padding: 50px;
+}
+
 #mapid {
   height: 550px;
-  max-width: 1000px;
-  width: 100%;
+  width: 1000px;
+  max-width: 100%;
   margin: auto;
   border: 1px solid #999;
+}
+
+@media screen and (max-width: 600px) {
+  body { margin: 0; }
 }

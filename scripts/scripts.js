@@ -1,28 +1,24 @@
 $(document).ready(function() {
 
-  function hideAll() {
-     $('#Boston').hide();
-     $('#Louisville').hide();
-     $('#Charleston').hide();
-     $('#Savannah').hide();
-   }
 
-  $('.sub').hide();
 
-   hideAll();
+ $(".content").hide();
 
-   $('.city').click(function(){
-   	$('.subphoto').hide();
-     $(this).parent().find('.subphoto').show();
+
+
+    $('.city').click(function(){
+      $(".content").hide();
+      $(this).parent().next().show();
+      $('.sub').hide();
+    });
+
+
+  $('.subphoto').click(function() {
+    $('.sub').hide();
+    $(this).next().slideDown();
    });
 
 
- $('.subphoto').click(function() {
-   $('.sub').hide();
-   $(this).parent().find('.sub').show();
-  });
 
 
-
-
-});
+ });
