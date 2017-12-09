@@ -22,3 +22,14 @@ This week was challenging because I was unsuccessful in making my images clickab
 
 
 Next week, I will try to make fix my JQuery to make my app interactive. Hopefully there will be time for that after presentations in class. I will then complete the CSS to make my app beautiful. I think CSS grid will be very helpful in putting the images and text in the exact spots that I want them on the page. However, I'm a little nervous to use it because it's unfamiliar territory and may take some time to learn.
+
+
+## Week 3
+
+
+This week I finally got my JQuery click functions to toggle hide and show and slide down work. Then I finished up my basic CSS such as fonts, background color, margins and padding, and more. Then, I tried to figure out CSS grid, and was ultimately unsuccessful.
+
+
+This week was overall satisfying because my functions finally do what I want them to. However, I was completely unsuccessful in figuring out CSS grid. Well, not completely; I did get kind of close, but I would have risked messing up my JQuery by adding more divs to my HTML to get grid to work. I've commented out all of the CSS grid that I worked on, which is quite a bit. I'll have to work on that for the Monday deadline.
+
+By Monday, I hope to make my media query work so that my page is responsive for desktop and mobile. I'd also like to make CSS grid work to polish up the overall style of the page, although it is functional and not bad looking with just regular CSS.
