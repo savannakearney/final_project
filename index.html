@@ -7,42 +7,49 @@
 
   <title>Nomadic Undergrad</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|News+Cycle" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles2.css">
 
 </head>
 
-<div class="site">
-
 <body>
 
-<div class="header">
-    <h1>Nomadic Undergrad</h1>
-    <h3>Tips and tricks on travelling the eastern United States on a college student's budget.</h3>
-    <p>Where do you want to go?</p>
-</div>
+<div class="container">
+  <div class="row">
 
-<div class="map">
-<p>Click on the link in each marker to learn more about the city.</p>
-<div id="mapid"></div>
+<!--Title and subtitles-->
+<div class="col-md-12 header">
+    <h1 class="text-center">Nomadic Undergrad</h1>
+    <h3 class="text-center">Tips and tricks on travelling the eastern United States on a college student's budget.</h3>
+    <p class="text-center">Where do you want to go?</p>
 </div>
+<!--Title and subtitles-->
 
- <div id="boston_main_image" class=mainphoto><!--Boston Heading, Image & Attribution-->
-  <h1>Boston, Massachusets</h1>
-  <p>Click the image for a taste of Boston</p>
-  <img class="city" src=images/boston/anthony-delanoix-unsplash.jpg alt="Boston Skyline">
+<!--Map-->
+<div class="map col-md-12">
+<p class="text-center">Click on the link in each marker to learn more about the city.</p>
+<div class="img-fluid mx-auto" id="mapid"></div>
+</div>
+<!--Map-->
+
+ <div id="boston_main_image" class="col-md-12"><!--Boston Heading, Image & Attribution-->
+  <h1 class="text-center">Boston, Massachusets</h1>
+  <p class="text-center">Click each image for a taste of Boston</p>
+  <img class="img-fluid rounded city" src=images/boston/anthony-delanoix-unsplash.jpg alt="Boston Skyline">
   <p>Image courtesy of <a href="https://unsplash.com/photos/VDS8ASoyzjw">Anthony Delanoix on Unsplash</a>.</p>
 </div><!--Boston Heading, Image & Attribution-->
 
 <div id="Boston" class="content"><!--Contains everything that will be hidden-->
 
-<div id="boston_food">
+<div class="col-md-4">
   <div class="subphoto">
     <h2>Food</h2>
-    <img class="subphoto" id="b_food" src=images/interests/toa-heftiba-unsplash.jpg alt="Seafood">
+    <img class="img-fluid rounded subphoto" id="b_food" src=images/interests/toa-heftiba-unsplash.jpg alt="Seafood">
     <p>Image courtesy of <a href="https://unsplash.com/photos/VNu0yM4kFdA">Toa Heftiba on Unsplash</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -51,14 +58,14 @@
     <p>Located near the waterfront of Boston, Faneuil Hall has been a marketplace since 1743. Besides being home to 14 different restaurants, bars and pubs, Quincy Market Colonnade also resides here, featuring more than 36 international vendors in the largest food hall in New England. Price: $$.</p>
 
     <h3>Mike's Pastry</h3>
-    <p>Founded in 1946, Mike's Pastry is one of the best-known Italian bakeries in Boston. Tourists and locals alike will recognize the iconic white box with a bright blue label and bow tied with a string, containing anything from cannolis, lobster tails, black and white cookies or Boston cream pie.  >Price: $</b>.</p>
+    <p>Founded in 1946, Mike's Pastry is one of the best-known Italian bakeries in Boston. Tourists and locals alike will recognize the iconic white box with a bright blue label and bow tied with a string, containing anything from cannolis, lobster tails, black and white cookies or Boston cream pie.  Price: $.</p>
   </div><!--Contains text-->
 </div> <!-- all Boston food content -->
 
-<div id="boston_history">
+<div class="col-md-4">
   <div class="subphoto">
     <h2>History</h2>
-    <img class="subphoto" id="b_history" src=images/interests/marco-krenn-unsplash.jpg alt="American Flag">
+    <img class="img-fluid rounded subphoto" id="b_history" src=images/interests/marco-krenn-unsplash.jpg alt="American Flag">
     <p>Image courtesy of <a href="https://unsplash.com/photos/iVtNNdvhldA">Marco Krenn on Unsplash</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -74,9 +81,10 @@
   </div><!--Contains text-->
 </div> <!-- all Boston history -->
 
-  <div class="subphoto" id="boston_fun">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Fun</h2>
-    <img class="subphoto" id="b_fun" src=images/interests/DSC_0130.jpg alt="Concert at Boston Commons">
+    <img class="img-fluid rounded subphoto" id="b_fun" src=images/interests/DSC_0130.jpg alt="Concert at Boston Commons">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -87,20 +95,22 @@
     <h3>Fenway Park</h3>
     <p>Home of the Boston Redsox since 1953, Fenway Park is the oldest ballpark in Major League Baseball. Besides going to Redsox games, you can also visit the Fenway Park Living Museum. Price of park tours: $20. Price of game tickets: varies.</p>
   </div><!--Contains text-->
+</div><!-- all Boston history -->
 </div><!--Contains everything that will be hidden-->
 
-<div id="louisville_main_image" class=mainphoto><!--Louisville Heading, Image & Attribution-->
-  <h1>Louisville, Kentucky</h1>
-  <p>Click the image for a taste of Louisville</p>
-  <img class="city" src=images/louisville/andrew-welch-unsplash.jpg alt="louisville">
+<div id="louisville_main_image" class="col-md-12"><!--Louisville Heading, Image & Attribution-->
+  <h1 class="text-center">Louisville, Kentucky</h1>
+  <p class="text-center">Click each image for a taste of Louisville</p>
+  <img class="img-fluid rounded city" src=images/louisville/andrew-welch-unsplash.jpg alt="louisville">
   <p>Image courtesy of <a href="https://unsplash.com/photos/cbi8e7GNwxc">Andrew Welch on Unsplash</a>.</p>
 </div><!--Louisville Heading, Image & Attribution-->
 
 <div id="Louisville" class="content"><!--Contains everything that will be hidden-->
 
-  <div class="subphoto" id="louisville_food">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Food</h2>
-    <img class="subphoto" id="l_food" src=images/interests/niklas-rhose-unsplash.jpg alt="Seafood">
+    <img class="img-fluid rounded subphoto" id="l_food" src=images/interests/niklas-rhose-unsplash.jpg alt="Seafood">
     <p>Image courtesy of <a href="https://unsplash.com/photos/FlmXvqlD-nI">Niklas Rhose on Unsplash</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -111,10 +121,12 @@
     <h3>Safai Coffeeshop</h3>
     <p>This unique coffeeshop, opened by a couple in 1998 in the Highlands area of Louisville may seem small, but that's the local charm. The menu boasts a range of organic coffees, drinks, and even delicious crepes. Price: $.</p>
   </div><!--Contains text-->
+</div><!--Contains all Louisville food-->
 
-  <div class="subphoto" id="louisville_outdoors">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Outdoors</h2>
-    <img class="subphoto" id="l_outdoors" src=images/interests/DSC_0049.jpg alt="Red River Gorge">
+    <img class="img-fluid rounded subphoto" id="l_outdoors" src=images/interests/DSC_0049.jpg alt="Red River Gorge">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -128,10 +140,12 @@
     <h3>The Big Four Bridge</h3>
     <p>Who says you can't spend time outdoors in the city? This bridge is a former railroad truss bridge that spans the Ohio River, connecting Louisville, Kentucky with Jeffersonville, Indiana. It was constructed in 1895, but it was converted into a pedestrian and bicycle bridge in 1969. Price: free.</p>
   </div><!--Contains text-->
+</div><!--Contains all Louisville outdoors-->
 
-  <div class="subphoto" id="louisville_fun">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Fun</h2>
-    <img class="subphoto" id="l_fun" src=images/interests/IMG_2364.jpg alt="Crowd at the Kentucky Derby">
+    <img class="img-fluid rounded subphoto" id="l_fun" src=images/interests/IMG_2364.jpg alt="Crowd at the Kentucky Derby">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -142,20 +156,22 @@
     <h3>Belle of Louisville</h3>
     <p>The Belle of Louisville is the oldest Mississippi River steamboat still in operation, and it is a U.S. National Historic Landmark. Launched in 1914, it was used as a ferry between Memphis, TN and West Memphis, AR. And, April through October you can board for river cruises ato view the beautiful sites of the city. Price: $15-$43.</p>
   </div><!--Contains text-->
+</div><!--Contains all Louisville fun-->
 </div><!--Contains everything that will be hidden-->
 
-<div id="charleston_main_image" class=mainphoto><!--Charleston Heading, Image & Attribution-->
-  <h1>Charleston, South Carolina</h1>
-    <p>Click the image for a taste of Charleston</p>
-  <img class="city" src=images/charleston/spencer-means-flickr.jpg alt="Charleston Pink Building">
+<div id="charleston_main_image" class="col-md-12"><!--Charleston Heading, Image & Attribution-->
+  <h1 class="text-center">Charleston, South Carolina</h1>
+    <p class="text-center">Click each image for a taste of Charleston</p>
+  <img class="img-fluid rounded city" src=images/charleston/spencer-means-flickr.jpg alt="Charleston Pink Building">
   <p>Image courtesy of <a href="https://www.flickr.com/photos/hunky_punk/27946254313/">Spencer Means on Flickr</a>.</p>
 </div><!--Charleston Heading, Image & Attribution-->
 
 <div id="Charleston" class="content"><!--Contains everything that will be hidden-->
 
-  <div class="subphoto" id="charleston_food">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Food</h2>
-    <img class="subphoto" id="c_food" src=images/interests/eaters-collective-unsplash.jpg alt="Pasta">
+    <img class="img-fluid rounded subphoto" id="c_food" src=images/interests/eaters-collective-unsplash.jpg alt="Pasta">
     <p>Image courtesy of <a href="https://unsplash.com/photos/ddZYOtZUnBk">Eaters Collective on Unsplash</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -166,10 +182,12 @@
     <h3>Stars Rooftop and Grill Room</h3>
     <p>Experience the nightlife of Charleston at Stars, a rooftop bar and American grill, located on King Street. The rooftop bar offers a 360 degree view of the historic district of Charleston, and downstairs boasts a 1930s style grill room that creates unique and delectable food. Price: $$.</p>
   </div><!--Contains text-->
+</div><!--Contains all Charleston food-->
 
-  <div class="subphoto" id="charleston_fun">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Fun</h2>
-    <img class="subphoto" id="c_fun" src=images/interests/IMG_0647.jpg alt="Bridge at Magnolia Plantation">
+    <img class="img-fluid rounded subphoto" id="c_fun" src=images/interests/IMG_0647.jpg alt="Bridge at Magnolia Plantation">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -180,10 +198,12 @@
     <h3>Charleston City Market</h3>
     <p>Charleston City Market was established in the 1790s and stretches four city blocks through downtown Charleston. As one of the nation's oldest public market, it is home to more than 300 entrepreneurs and vendors, so you'll always be able to take home a souvenir or two. Price: free.</p>
   </div><!--Contains text-->
+</div><!--Contains all Charleston fun-->
 
-  <div class="subphoto" id="charleston_architecture">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Architecture</h2>
-    <img class="subphoto" id="c_architecture" src=images/interests/IMG_0656.jpg alt="Sunset at Charleston Battery">
+    <img class="img-fluid rounded subphoto" id="c_architecture" src=images/interests/IMG_0656.jpg alt="Sunset at Charleston Battery">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -194,20 +214,22 @@
     <h3>The Battery</h3>
     <p>The Battery is the name for East Battery Street, home to some of the grandest antebellum mansions in the city. This scenic street sits right across from the water where Cooper River and Ashley River meet, and offers a glimpse into some important Charleston history. Price: free.</p>
   </div><!--Contains text-->
+</div><!--Contains all Charleston architecture-->
 </div><!--Contains everything that will be hidden-->
 
-<div id="savannah_main_image" class=mainphoto><!--Savannah Heading, Image & Attribution-->
-  <h1>Savannah, Georgia</h1>
-  <p>Click the image for a taste of Savannah</p>
-  <img class="city" src=images/savannah/jessica-furtney-unsplash-4.jpg alt="Forsyth Park">
+<div id="savannah_main_image" class="col-md-12"><!--Savannah Heading, Image & Attribution-->
+  <h1 class="text-center">Savannah, Georgia</h1>
+  <p class="text-center">Click each image for a taste of Savannah</p>
+  <img class="img-fluid rounded city" src=images/savannah/jessica-furtney-unsplash-4.jpg alt="Forsyth Park">
   <p>Image courtesy of <a href="https://unsplash.com/photos/ffZy7KaLqKA">Jessiva Furtney on Unsplash</a>.</p>
 </div><!--Savannah Heading, Image & Attribution-->
 
 <div id="Savannah" class="content"><!--Contains everything that will be hidden-->
 
-  <div class="subphoto" id="savannah_food">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Food</h2>
-    <img class="subphoto" id="s_food" src=images/interests/yvonne-lee-harijanto-unsplash.jpg alt="Pork">
+    <img class="img-fluid rounded subphoto" id="s_food" src=images/interests/yvonne-lee-harijanto-unsplash.jpg alt="Pork">
     <p>Image courtesy of <a href="https://unsplash.com/photos/xKSRpUH0VZo">Yvonne Lee Harijanto on Unsplash</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -221,10 +243,12 @@
     <h3>River Street Sweets</h3>
     <p>River Street Sweets is the best place to find handmade southern candies. It's a local place that's been run by four generations of family since 1973. Their best seller is the pecan pralines (and they offer free samples at the door!). Price: $$.</p>
   </div><!--Contains text-->
+</div><!--Contains all Savannah food-->
 
-  <div class="subphoto" id="savannah_shopping">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>Shopping</h2>
-    <img class="subphoto" id="s_shopping" src=images/interests/sonja-langford-unsplash.jpg alt="Honey">
+    <img class="img-fluid rounded subphoto" id="s_shopping" src=images/interests/sonja-langford-unsplash.jpg alt="Honey">
     <p>Image courtesy of <a href="https://unsplash.com/photos/RQHzRELE2Ss">Sonja Langford</a>.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -235,10 +259,12 @@
     <h3>River Street</h3>
     <p>If shopping isn't enough for you, why not do it on the waterfront? River Street offersa plethora of shops and restaurants, all along cobblestone streets right across from Savannah River. There's even sometimes street vendors and performers along River street, so you'll never get bored. Price: $-$$$.</p>
   </div><!--Contains text-->
+</div><!--Contains all Savannah shopping-->
 
-  <div class="subphoto" id="savannah_history">
+<div class="col-md-4">
+  <div class="subphoto">
     <h2>History</h2>
-    <img class="subphoto" id="s_history" src=images/interests/DSC_0320.jpg alt="Cathedral of St. John the Baptist">
+    <img class="img-fluid rounded subphoto" id="s_history" src=images/interests/DSC_0320.jpg alt="Cathedral of St. John the Baptist">
     <p>Image courtesy of Savanna Kearney.</p>
   </div><!--Contains interest image, title and attribution-->
 
@@ -249,13 +275,16 @@
     <h3>Forsyth Park</h3>
     <p>Forsyth Park is the oldest park in the historic district of Savannah. It's more than 160 years old and spans 30 acres. This park features concerts, a Saturday farmers market, beautiful foliage, a historic monument and an impressive fountain at the north end of the park. Price: free.</p>
   </div><!--Contains text-->
+</div><!--Contains Savannah history-->
 </div><!--Contains everything that will be hidden-->
 
-<footer>This website was created by Savanna Kearney</footer>
-
-</div>
+<footer class="col-md-12 text-center">This website was created by Savanna Kearney</footer>
 
 <!--JavaScript-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 
@@ -285,6 +314,9 @@ marker4.bindPopup("<b>Boston, MA</b><br>Click <a href='#boston_main_image'>here 
 <script src="scripts/scripts.js"></script>
 
 <!--JavaScript-->
+
+</div> <!--For "row"-->
+</div> <!--For "container"-->
 
 </body>
 </html>

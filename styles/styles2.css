@@ -1,0 +1,44 @@
+body {
+  background: #FFE6E1;
+  color: #58615A;
+}
+
+#mapid {
+  height: 500px;
+  width: 900px;
+  border: 1px solid #999;
+}
+
+h1 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 3.5rem;
+}
+h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.city, .subphoto {
+  cursor: pointer;
+}
+
+.subphoto {
+  width: 20rem;
+}
+
+p, h3, footer {
+  font-family: 'News Cycle', sans-serif;
+}
+
+#map {
+  display: grid;
+}
+
+#boston_main_image, #louisville_main_image, #charleston_main_image, #savannah_main_image {
+  padding-top: 5.5rem;
+}
+
+footer {
+  padding: 2rem;
+}

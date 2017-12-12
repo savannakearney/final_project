@@ -33,3 +33,13 @@ This week I finally got my JQuery click functions to toggle hide and show and sl
 This week was overall satisfying because my functions finally do what I want them to. However, I was completely unsuccessful in figuring out CSS grid. Well, not completely; I did get kind of close, but I would have risked messing up my JQuery by adding more divs to my HTML to get grid to work. I've commented out all of the CSS grid that I worked on, which is quite a bit. I'll have to work on that for the Monday deadline.
 
 By Monday, I hope to make my media query work so that my page is responsive for desktop and mobile. I'd also like to make CSS grid work to polish up the overall style of the page, although it is functional and not bad looking with just regular CSS.
+
+
+## Final Summary
+
+
+The final few days of finishing up my project were challenging. I tried really hard to make CSS grid work, but Professor McAdams recommended Bootstrap instead. But even after I applied the exact columns and breakpoints she recommended and fiddled with it for a long time, I still couldn't get it to look the way I originally wanted.
+
+The good news is that my page is now fully responsive and looks good on mobile. And, even though it doesn't look exactly the way I originally planned, it does look well-styled and user-friendly.
+
+This project was by far the most challenging thing I've done all semester. But, it really showed me just how much I've learned and how confident I am with certain parts of HTML, CSS and JavaScript (mostly just HTML and CSS though). It also showed me just how much I don't know and how many infinite possibilities there are with website coding. Ultimately, I'm satisfied with my project and would be proud to showcase it to professionals.
